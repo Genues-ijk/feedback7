@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="author" content="Rayan">
+      <title>الاقتراحات</title> 
+      </head>
+      <style>
+          .c{width:150px;
+          font-size: 20px;
+          font-weight: bold;
+          background-color: powderblue;}
+          form{font-family: Verdana, Tahoma, sans-serif;
+              }
+      p{font-size: 30px;
+         }
+      .p1{font-size: 20px;
+          font-weight: thick;}
+          .comment{width:50%;
+                   height:150px;
+                   overflow:scroll;
+                    background-color:powderblue;
+                      font-size: 20px;
+                      font-weight: bold;
+                    text-align: top right;
+                      }  
+      </style>
+        <body>
+          <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.1.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.1.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+            <form action="feedback.php" method="post">
+                <div align="center">
+                    <p>التقييم</p>
+                <input class="c" type="text" name="user" placeholder="اسمك"/>
+                 <input class="c" type="id" name="id" placeholder="رقمك الجامعي"/>
+                 <input class="c" type="email" name="email" placeholder="ايميلك"/>
+                 <br>
+                 <p>اجب على الاسئلة التالية</p>
+                 <div class="p1">هل كانت عملية التسجيل سهلة وسريعة؟</div>
+                 <br>
+                 <input class="c" type="text" name="q1" placeholder="نعم/لا"/>
+                 <br><br>
+                 <div class="p1">هل وجدت الموقع سهل التصفح؟</div>
+                 <br>
+                 <input class="c" type="text" name="q2" placeholder="نعم/لا"/>
+                 <br><br>
+                 <div class="p1">كم استغرق تصفحك لمحتوى الموقع تقريباً؟</div>
+                 <br>
+                 <input class="c" style="font-size:15px;" type="text" name="q3" placeholder="5دقائق/10دقائق/نصف ساعة"/>
+                           <br><br>
+                           <div class="p1" style="font-weight: bold;">ضع اقتراحاتك هنا لتطوير الموقع</div>
+                           <br>
+                 <input class="comment" type="comment" name="comment"  placeholder="الاقتراحات"/> 
+                           <br><br>                
+                 <input style="width:150px;font-size:20px;font-weight: bold;" type="submit" name="submit" value="ارسال"/>
+                 </div>
+                </form>
+                </body>
+                </html>
